@@ -53,7 +53,7 @@ add_library(${PROJECT_NAME} STATIC
 )
 
 add_executable(demo
-  ${CMAKE_CURRENT_SOURCE_DIR}/sources/source.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/demo/main.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC
@@ -71,6 +71,7 @@ target_link_libraries(${PROJECT_NAME}
         )
 
 target_link_libraries(demo ${PROJECT_NAME})
+
 if(BUILD_TESTS)
   add_executable(tests
     # TODO: enum your files and delete this comment

@@ -59,7 +59,6 @@ add_executable(demo
 target_include_directories(${PROJECT_NAME} PUBLIC
   "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>"
   "$<INSTALL_INTERFACE:include>"
-        ${CMAKE_CURRENT_SOURCE_DIR}third-party/ThreadPool
 )
 
 target_link_libraries(${PROJECT_NAME}
@@ -69,7 +68,7 @@ target_link_libraries(${PROJECT_NAME}
         Boost::program_options
         Boost::filesystem
         Boost::thread
-        GTest::gtest_main)
+        )
 
 target_link_libraries(demo ${PROJECT_NAME})
 if(BUILD_TESTS)

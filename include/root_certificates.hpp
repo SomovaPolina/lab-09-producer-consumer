@@ -19,6 +19,7 @@ namespace detail {
 // allow the implementation to be header-only.
 //
 
+
 template <class = void>
 void load_root_certificates(ssl::context& ctx, boost::system::error_code& ec) {
   std::string const cert =

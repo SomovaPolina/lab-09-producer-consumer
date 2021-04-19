@@ -14,6 +14,5 @@ void Run_crauler(int argc, char* argv[]) {
 
 /*
  ./cmake-build-debug/tests --url https://www.bbc.com/russian/news-54840425 \
- --depth 1 --network_threads 4 --parser_threads 4 --output \
- /Users/evgenii/CLionProjects/lab-09-producer-consumer/output.txt
+ --depth 1 --network_threads 4 --parser_threads 4 --output\
  */
